@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSCad.Challenge", "WSCad.Challenge\WSCad.Challenge.csproj", "{06D0C14C-8BAD-4C93-95FB-F8E1A94EAFEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06D0C14C-8BAD-4C93-95FB-F8E1A94EAFEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D0C14C-8BAD-4C93-95FB-F8E1A94EAFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D0C14C-8BAD-4C93-95FB-F8E1A94EAFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D0C14C-8BAD-4C93-95FB-F8E1A94EAFEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {258A2C8D-7747-464F-AA58-F04DE4C388ED}
+	EndGlobalSection
+EndGlobal
