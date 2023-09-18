@@ -8,7 +8,27 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Menu>
-            <Button Name="btnOpenFile" Click="btnOpenFiles_Click">Open files</Button>
+            <Button Name="btnOpenFile" Command="{Binding ImportCommand}">Open files</Button>
         </Menu>
+        <ItemsControl ItemsSource="{Binding Path = Lines}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                    <Canvas Background="White" Width="500" Height="400"  />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Line X1="{Binding X1}" Y1="{Binding Y1}" X2="{Binding X2}" Y2="{Binding Y2}" Stroke="Black" StrokeThickness="3"></Line>
+                     </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+        <ItemsControl ItemsSource="{Binding Path = Circles}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Ellipse Canvas.Left="{Binding X1}" Canvas.Top="{Binding Y1}" Fill="Black"  Width="{Binding Radius}" Height="{Binding Radius}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </Grid>
 </Window>
